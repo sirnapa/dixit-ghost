@@ -1,0 +1,476 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<style>
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue", Helvetica, "Hiragino Sans GB", Arial, sans-serif;
+    font-size: 13px;
+    line-height: 18px;
+    color: #737373;
+    background-color: white;
+    margin: 10px 13px 10px 13px;
+}
+table {
+	margin: 10px 0 15px 0;
+	border-collapse: collapse;
+}
+td,th {	
+	border: 1px solid #ddd;
+	padding: 3px 10px;
+}
+th {
+	padding: 5px 10px;	
+}
+
+a {
+    color: #0069d6;
+}
+a:hover {
+    color: #0050a3;
+    text-decoration: none;
+}
+a img {
+    border: none;
+}
+p {
+    margin-bottom: 9px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #404040;
+    line-height: 36px;
+}
+h1 {
+    margin-bottom: 18px;
+    font-size: 30px;
+}
+h2 {
+    font-size: 24px;
+}
+h3 {
+    font-size: 18px;
+}
+h4 {
+    font-size: 16px;
+}
+h5 {
+    font-size: 14px;
+}
+h6 {
+    font-size: 13px;
+}
+hr {
+    margin: 0 0 19px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+}
+blockquote {
+    padding: 13px 13px 21px 15px;
+    margin-bottom: 18px;
+    font-family:georgia,serif;
+    font-style: italic;
+}
+blockquote:before {
+    content:"\201C";
+    font-size:40px;
+    margin-left:-10px;
+    font-family:georgia,serif;
+    color:#eee;
+}
+blockquote p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 18px;
+    margin-bottom: 0;
+    font-style: italic;
+}
+code, pre {
+    font-family: Monaco, Andale Mono, Courier New, monospace;
+}
+code {
+    background-color: #fee9cc;
+    color: rgba(0, 0, 0, 0.75);
+    padding: 1px 3px;
+    font-size: 12px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+pre {
+    display: block;
+    padding: 14px;
+    margin: 0 0 18px;
+    line-height: 16px;
+    font-size: 11px;
+    border: 1px solid #d9d9d9;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+pre code {
+    background-color: #fff;
+    color:#737373;
+    font-size: 11px;
+    padding: 0;
+}
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:10px auto;
+    }
+}
+@media print {
+	body,code,pre code,h1,h2,h3,h4,h5,h6 {
+		color: black;
+	}
+	table, pre {
+		page-break-inside: avoid;
+	}
+}
+</style>
+<title>Echo Documentation</title>
+
+</head>
+<body>
+<h1>Echo Documentation</h1>
+
+<p>Thanks for purchasing Echo, a responsive and minimalistic theme for Ghost. It is designed to focus on your content and present it beautifully.</p>
+
+<p>Here you will be able to find out how to install and customize the theme.</p>
+
+<h2>Table of Contents</h2>
+
+<ol>
+<li>Getting Started</li>
+<li>Installation</li>
+<li>Settings</li>
+<li>Customization</li>
+<li>Browser Support</li>
+<li>Version History</li>
+<li>Credits</li>
+</ol>
+
+
+<h2>1 . Getting Started</h2>
+
+<p>For the purposes of this documentation, it is assumed that you have Ghost up and running. If not, please visit <a href="http://docs.ghost.org">docs.ghost.org</a> and follow the guide to install and configure Ghost.</p>
+
+<h2>2. Installation</h2>
+
+<ol>
+<li>Navigate to the directory on your server where Ghost is installed.</li>
+<li>Once there, navigate to the /content/themes/ directory.</li>
+<li>Upload the theme files to this directory.</li>
+<li>Restart Ghost.</li>
+<li>Log into your Ghost Admin.</li>
+<li>Navigate to Settings > General and select Echo in the theme options dropdown menu.</li>
+<li>Click 'Save'.</li>
+</ol>
+
+
+<p><strong>Note:</strong> If you're on the Ghost Hosted Service, rather than a self-install, to switch theme you'll need to go to your <a href="https://ghost.org/blogs/">blog management</a> page and click on "edit" beside the name of your blog.</p>
+
+<h2>3. Settings</h2>
+
+<p>In Settings > General several options will alter the content in Echo:</p>
+
+<ul>
+<li><strong>Blog Logo</strong> - Appears as the first item the header.</li>
+<li><strong>Blog Title</strong>: - Appears beside the blog logo in the header.</li>
+<li><strong>Blog Description</strong> - Appears as the first item in the sidebar.</li>
+<li><strong>Blog Cover</strong> - This will appear as a full background image in the underneath the header.</li>
+<li><strong>Posts per page</strong> - This is how many posts are displayed per page.</li>
+</ul>
+
+
+<h2>4. Customization</h2>
+
+<p>If you're comfortable with HTML &amp; CSS, you can make any changes to the theme by editing Echo's template files.</p>
+
+<p><strong>Please be aware that when Echo is updated in the future, you will need to re-integrate your custom theme changes.</strong></p>
+
+<p>The CSS files were created using <a href="http://sass-lang.com/guide">SASS</a>. If you are familiar with SASS, you can easily customize Echo.</p>
+
+<h4>Using CSS</h4>
+
+<p>If you don't want to use SASS, you can edit the Echo's main CSS file (screen.css). This file is located in the /assets/css/ directory.</p>
+
+<p>The best way to change the colors in Echo is to use the Find &amp; Replace feature found in many popular <a href="http://www.sublimetext.com/">text editors</a>.</p>
+
+<p>Here are the colors you should look for:</p>
+
+<ul>
+<li><strong>Primary Color:</strong> #30363c (Black)</li>
+<li><strong>Secondary Color:</strong> #5c6872 (Dark Grey)</li>
+<li><strong>Tertiary Color:</strong> #929aa0 (Light Grey)</li>
+<li><strong>Font Color:</strong> #535e67 (Dark Grey)</li>
+<li><strong>Accent Color:</strong> #DD574C (Red)</li>
+<li><strong>Border Color:</strong> #d1d6da (Light Grey)</li>
+</ul>
+
+
+<h4>Using SASS</h4>
+
+<p>You will find the following SCSS files in /assets/scss/ directory:</p>
+
+<ul>
+<li><strong>mixins.scss</strong> - This contains all the CSS declarations that Echo reuses throughout the theme.</li>
+<li><strong>screen.scss</strong> - This is the main CSS stylesheet. It imports the mixins.scss and variables.scss files.</li>
+<li><strong>variables.scss</strong> - This contains all the variables that you can tweak to customize the way Echo looks.</li>
+</ul>
+
+
+<p><strong>Note</strong>: You will need a SASS preprocessor, such as <a href="http://incident57.com/codekit/">CodeKit</a> (Mac only) or <a href="http://livereload.com/">LiveReload</a> to use the SCSS files.</p>
+
+<h4>Navigation</h4>
+
+<p>You can customize the navigation menu by editing the navigation.hbs file located in the partials directory.</p>
+
+<p>This is a great place to put links to your static pages or custom links to your website.</p>
+
+<ol>
+<li>Navigate to the partials directory on your server.</li>
+<li>Open the navigation.hbs file in your favorite <a href="http://www.sublimetext.com/">text editor</a>.</li>
+<li>Replace the hashtags (#) with your own links.</li>
+<li>Upload the changed navigation.hbs file to the partials directory.</li>
+</ol>
+
+
+<p><strong>Example With Absolute Links:</strong></p>
+
+<pre><code>&lt;li&gt;
+    &lt;a href="http://www.your-website-here.com"&gt;About Me&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+    &lt;a href="http://www.your-website-here.com"&gt;Resume&lt;/a&gt;
+&lt;/li&gt;
+</code></pre>
+
+<p><strong>Example With Static Page Links:</strong></p>
+
+<pre><code>&lt;li&gt;
+    &lt;a href="about"&gt;About Me&lt;/a&gt;
+&lt;/li&gt;
+&lt;li&gt;
+    &lt;a href="resume"&gt;Resume&lt;/a&gt;
+&lt;/li&gt;
+</code></pre>
+
+<h4>Social Media</h4>
+
+<p>Add your own social media links to the sidebar by editing the social-media.hbs file located in the partials directory.</p>
+
+<ol>
+<li>Navigate to the partials directory on your server</li>
+<li>Open the social-media.hbs file in your favorite text editor.</li>
+<li>Replace the hashtags (#) with your own links.</li>
+<li>Upload the changed social-media.hbs file to the partials directory.</li>
+</ol>
+
+
+<p>Pick and choose which social media icons you wish to use, be sure to add the appropriate HTML markup in the social-media.hbs file.</p>
+
+<p><strong>Facebook</strong></p>
+
+<pre><code>&lt;a href="http://www.yourlinkhere.com"&gt;
+    &lt;i class="icon-facebook"&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p><strong>Twitter</strong></p>
+
+<pre><code>&lt;a href="http://www.yourlinkhere.com"&gt;
+    &lt;i class="icon-twitter"&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p><strong>Google+</strong></p>
+
+<pre><code>&lt;a href="http://www.yourlinkhere.com"&gt;
+    &lt;i class="icon-google-plus"&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p><strong>Instagram</strong></p>
+
+<pre><code>&lt;a href="http://www.yourlinkhere.com"&gt;
+    &lt;i class="icon-instagram"&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p><strong>Tumblr</strong></p>
+
+<pre><code>&lt;a href="http://www.yourlinkhere.com"&gt;
+    &lt;i class="icon-tumblr"&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p><strong>YouTube</strong></p>
+
+<pre><code>&lt;a href="http://www.yourlinkhere.com"&gt;
+    &lt;i class="icon-youtube"&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p><strong>Vimeo</strong></p>
+
+<pre><code>&lt;a href="http://www.yourlinkhere.com"&gt;
+    &lt;i class="icon-vimeo"&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p><strong>Pinterest</strong></p>
+
+<pre><code>&lt;a href="http://www.yourlinkhere.com"&gt;
+    &lt;i class="icon-pinterest"&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p><strong>Flickr</strong></p>
+
+<pre><code>&lt;a href="http://www.yourlinkhere.com"&gt;
+    &lt;i class="icon-flickr"&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p><strong>LinkedIn</strong></p>
+
+<pre><code>&lt;a href="http://www.yourlinkhere.com"&gt;
+    &lt;i class="icon-linkedin"&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code></pre>
+
+<p><strong>GitHub</strong></p>
+
+<pre><code>&lt;a href="http://www.yourlinkhere.com"&gt;
+    &lt;i class="icon-github"&gt;&lt;/i&gt;
+&lt;/a&gt;
+</code></pre>
+
+<h4>Favicon</h4>
+
+<p>You can add you own custom Favicon to your blog by replacing the favicon.ico file located in the assets directory:</p>
+
+<ol>
+<li>Navigate to the assets directory on your server.</li>
+<li>Replace the favicon.ico file with your own custom icon.</li>
+</ol>
+
+
+<p>There are <a href="http://tools.dynamicdrive.com/favicon/">many</a> <a href="http://www.favicon.cc/">different</a> <a href="http://favicon-generator.org/">web</a> based tools for converting an image into a favicon.ico file.</p>
+
+<h4>Cover Photo Text</h4>
+
+<p>You can add custom text to appear on top of the cover photo by editing the cover-photo.hbs file located in the partials directory.</p>
+
+<p>This is a great place to put your blog's tagline or motto.</p>
+
+<ol>
+<li>Navigate to the partials directory on your server.</li>
+<li>Open the cover-photo.hbs file in your favorite <a href="http://www.sublimetext.com/">text editor</a>.</li>
+<li>Replace the text between the <code>h2</code> HTML tags.</li>
+<li>Upload the changed cover-photo.hbs file to the partials directory.</li>
+</ol>
+
+
+<p>The cover photo text will only appear in you upload a cover photo image to your Ghost blog.</p>
+
+<h4>Featured Images</h4>
+
+<p>You can set a featured image by placing it as the <strong>first thing</strong> in your post. This featured image will be displayed along with an excerpt of the post on the homepage.</p>
+
+<ol>
+<li>Create or edit a post.</li>
+<li>Insert an image as the <strong>first thing</strong> in the post.</li>
+<li>Save/update the post.</li>
+</ol>
+
+
+<p>This feature is not limited to images, you can also feature YouTube, Vimeo or SoundCloud embeds.</p>
+
+<h2>5. Browser Support</h2>
+
+<table>
+<thead>
+<tr>
+<th> Desktop       </th>
+<th> Mobile           </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td> IE 9-11       </td>
+<td> Chrome (Android) </td>
+</tr>
+<tr>
+<td> Chrome        </td>
+<td> Safari (iOS 7)   </td>
+</tr>
+<tr>
+<td> Firefox       </td>
+<td></td>
+</tr>
+<tr>
+<td> Safari (Mac)  </td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+<h2>6. Version History</h2>
+
+<p>2014.3.1 - v1.0.1</p>
+
+<ul>
+<li>Optimized Font Icons and CSS</li>
+<li>Updated FitVids.js</li>
+<li>Updated Documentation</li>
+<li>Removed Modernizr, replaced with html5shiv</li>
+</ul>
+
+
+<p>2014.2.16 - v1.0</p>
+
+<ul>
+<li>Initial Release</li>
+</ul>
+
+
+<h2>7. Credits</h2>
+
+<ul>
+<li><a href="http://html5boilerplate.com/">HTML5 Boilerplate</a></li>
+<li><a href="http://jquery.com/">jQuery</a></li>
+<li><a href="https://code.google.com/p/html5shiv/">html5shiv</a></li>
+<li><a href="http://fitvidsjs.com/">FitVids.JS</a></li>
+<li><a href="http://unsplash.com/">Unsplash</a></li>
+<li><a href="https://www.google.com/fonts">Google Fonts</a></li>
+</ul>
+
+</body>
+</html>
