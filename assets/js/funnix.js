@@ -3,7 +3,7 @@
  */
 
 $(document).ready(function(){
-    //crearGalerias();
+    crearGalerias();
 });
 
 function crearGalerias(){
@@ -36,8 +36,8 @@ function crearGalerias(){
         $('.galeria_'+i).each(function(index,img){
             var divImg = $('<a>').addClass('galeria_img')
                 .attr('href',$(img).attr('src'))
-                .css('width',(100/elementos)+'%')
-                .css('height',(100/elementos)+'%')
+                .css('width',(100/elementos)-2+'%')
+                .css('height',(100/elementos)-2+'%')
                 .appendTo('#galeria_wrap_'+i);                
             $(img).appendTo(divImg);
         });
