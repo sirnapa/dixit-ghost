@@ -3,6 +3,7 @@
  */
 
 $(document).ready(function(){
+    $('.post .boton').parent().css('text-align','center');
     crearGalerias();
 });
 
