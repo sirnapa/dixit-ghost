@@ -25,30 +25,21 @@ function crearGalerias(){
     });
 
     for(var i=0;i<=$('body').data('galerias');i++){
-        if(!$('.galeria_'+i).length){
+        var elementos = $('.galeria_'+i).length;
+        if(!elementos){
             continue;
         }
-        
         $('.galeria_'+i).first().after(
             $('<div>').attr('id','galeria_wrap_'+i)
                 .addClass('galeria_wrap')
         );
-
         $('.galeria_'+i).each(function(index,img){
-            var divImg = $('<div>').attr('data-thumb',$(img).attr('src'))
-                .attr('data-src',$(img).attr('src'))
-                .appendTo('#galeria_wrap_'+i);
-
-            $('<div>').addClass('camera_caption fadeFromBottom')
-                .html($(img).attr('alt'))
-                .appendTo(divImg);
-            
-            $(img).remove();
+            var divImg = $('<a>').addClass('galeria_img')
+                .attr('href',$(img).attr('src'))
+                .css('width',(100/elementos)+'%')
+                .css('height',(100/elementos)+'%')
+                .appendTo('#galeria_wrap_'+i);                
+            $(img).appendTo(divImg);
         });
-
-        $('#galeria_wrap_'+i).camera({
-            thumbnails: true
-        });
-
     }
 }

@@ -16,12 +16,16 @@
 
 /** Galerías **/
 .galeria_wrap{
+	width: 100%;
+	text-align: center;
+}
+.galeria_wrap .galeria_img{
 	min-width: 100px;
 	min-height: 100px;
+	border: 1px solid #929AA0;
 	overflow: hidden;
 }
-
-.galeria_wrap img{
+.galeria_wrap .galeria_img img{
 	width: 100%;
 	height: auto;
 }
