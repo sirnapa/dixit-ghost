@@ -1,3 +1,7 @@
+.post img{
+	width: auto;
+	max-width: 100%;
+}
 section.author {
 	display: inline-block;
 	width: 100%;
@@ -8,7 +12,6 @@ section.author {
 section.author > div.image {
 	width: 15%;
 	float: left;
-	border: 1px solid #929AA0;
 	overflow: hidden;
 	margin-right: 10px;
 	margin-bottom: 10px;
