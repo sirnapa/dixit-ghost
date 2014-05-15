@@ -2,6 +2,7 @@
  * Detalles personalizados para Funnix
  */
 
+/** Imágenes del post **/
 .post img{
 	width: auto;
 	max-width: 100%;
@@ -12,6 +13,20 @@
     background: #669900;
     color: #FFFFFF;
 }
+
+/** Galerías **/
+.galeria_wrap{
+	min-width: 100px;
+	min-height: 100px;
+	overflow: hidden;
+}
+
+.galeria_wrap img{
+	width: 100%;
+	height: auto;
+}
+
+/** Sección de autor **/
 section.author {
 	display: inline-block;
 	width: 100%;

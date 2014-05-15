@@ -3,7 +3,7 @@
  */
 
 $(document).ready(function(){
-    crearGalerias();
+    //crearGalerias();
 });
 
 function crearGalerias(){
@@ -31,7 +31,7 @@ function crearGalerias(){
         
         $('.galeria_'+i).first().after(
             $('<div>').attr('id','galeria_wrap_'+i)
-                .addClass('camera_wrap camera_azure_skin')
+                .addClass('galeria_wrap')
         );
 
         $('.galeria_'+i).each(function(index,img){
