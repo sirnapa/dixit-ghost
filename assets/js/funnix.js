@@ -25,6 +25,10 @@ function crearGalerias(){
     });
 
     for(var i=0;i<=$('body').data('galerias');i++){
+        if(!$('.galeria_'+i).length){
+            continue;
+        }
+        
         $('.galeria_'+i).first().after(
             $('<div>').attr('id','galeria_wrap_'+i)
                 .addClass('camera_wrap camera_azure_skin')
