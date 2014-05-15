@@ -17,6 +17,7 @@
 /** Galerías **/
 .galeria_wrap{
 	width: 100%;
+	display: inline-flex;
 	text-align: center;
 }
 .galeria_wrap .galeria_img{
@@ -25,6 +26,7 @@
 	border: 1px solid #929AA0;
 	overflow: hidden;
 	padding: 1%;
+	float: left;
 }
 .galeria_wrap .galeria_img img{
 	width: 100%;
