@@ -3,6 +3,14 @@
  */
 
 $(document).ready(function(){
+    // Outdated browsers
+    outdatedBrowser({
+        bgColor: '#f25648',
+        color: '#ffffff',
+        lowerThan: 'transform',
+        languagePath: 'assets/plugins/outdatedbrowser.html'
+    });
+
     $('.post .boton').parent().css('text-align','center');
     crearGalerias();
 });
@@ -44,3 +52,4 @@ function crearGalerias(){
         });
     }
 }
+                        
