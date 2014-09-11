@@ -3,17 +3,20 @@
  */
 
 $(document).ready(function(){
-    // Outdated browsers
-    outdatedBrowser({
-        bgColor: '#f25648',
-        color: '#ffffff',
-        lowerThan: 'transform',
-        languagePath: 'assets/plugins/outdatedbrowser.html'
-    });
-
     $('.post .boton').parent().css('text-align','center');
     crearGalerias();
+    centrarImagenes();
 });
+
+function centrarImagenes(){
+    $('.echo-post-content img').each(function(i,imagen){
+        if(!$(imagen).parent().hasClass('galeria-wrap')){
+            var contenedor = $('<p>').css('text-align','center');
+            $(imagen).after(contenedor);
+            $(imagen).appendTo(contenedor);
+        }
+    });
+}
 
 function crearGalerias(){
     $('body').data('galerias',0);
@@ -39,15 +42,15 @@ function crearGalerias(){
             continue;
         }
         $('.galeria_'+i).first().after(
-            $('<div>').attr('id','galeria_wrap_'+i)
-                .addClass('galeria_wrap')
+            $('<div>').attr('id','galeria-wrap_'+i)
+                .addClass('galeria-wrap')
         );
         $('.galeria_'+i).each(function(index,img){
-            var divImg = $('<a>').addClass('galeria_img')
+            var divImg = $('<a>').addClass('galeria-img')
                 .attr('href',$(img).attr('src'))
                 .css('width',(100/elementos)-2+'%')
                 .css('height',(100/elementos)-2+'%')
-                .appendTo('#galeria_wrap_'+i);                
+                .appendTo('#galeria-wrap_'+i);                
             $(img).appendTo(divImg);
         });
     }
