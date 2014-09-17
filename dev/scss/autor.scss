@@ -1,0 +1,47 @@
+/**
+ * Sección de autor
+ */
+
+section {
+  &.author {
+    display: inline-block;
+    width: 100%;
+    border-top: 1px solid #D1D6DA;
+    margin: 40px 0 0;
+    padding: 20px 5px 10px;
+    > div {
+      &.image {
+        width: 15%;
+        float: left;
+        overflow: hidden;
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+      &.about {
+        display: table;
+        small {
+          color: #929AA0;
+          text-transform: none;
+        }
+        > {
+          h4 {
+            font-size: 1.5em;
+            text-transform: uppercase;
+          }
+          p {
+            font-size: 1.3em;
+          }
+        }
+      }
+    }
+  }
+  &.comment {
+    width: 100%;
+  }
+}
+
+p a {
+  &:link, &:visited {
+    color: #669900;
+  }
+}

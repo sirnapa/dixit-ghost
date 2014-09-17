@@ -17,4 +17,11 @@ $(document).ready(function(){
     /* Make Videos Responsive */
     $(".post").fitVids();
 
+    /* Centrado de botón */
+    $('.post .boton').parent().css('text-align','center');
+
+    /* Imágenes y Galerías */
+    crearGalerias();
+    centrarImagenes();
+
 });
