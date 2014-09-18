@@ -1,0 +1,22 @@
+<section class="author">
+    {{#if author.image}}
+        <div class="image">
+            <a href="{{@blog.url}}/author/{{author.slug}}">
+                <img src="{{author.image}}" title="{{author.name}}"/>
+            </a>
+        </div>
+    {{/if}}
+    <div class="about">
+        <h4>
+            <a href="{{@blog.url}}/author/{{author.slug}}">{{author.name}}</a>
+            {{#if author.website}}
+                <a href="{{author.website}}">
+            {{/if}}
+            <small>{{author.location}}</small>
+            {{#if author.website}}
+                </a>
+            {{/if}}
+        </h4>
+        <p>{{author.bio}}</p>
+    </div>
+</section>

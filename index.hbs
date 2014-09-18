@@ -2,25 +2,4 @@
 
 {{! The comment above "< default" means - insert everything in this file into
     the {body} of the default.hbs template, which contains our header/footer. }}
-    <div id="post-index">
-        {{#foreach posts}}
-    
-        <article class="{{post_class}}">
-            <section class="echo-post-excerpt">       
-                {{> post-meta}}
-                <div class="post-flex">
-                    <a href="{{url}}" class="post-vista">{{content words="0"}}</a>
-                    <div class="post-detalle">
-                        <h1><a href="{{url}}">{{{title}}}</a></h1>
-                        <p class="echo-excerpt">{{excerpt}}&hellip;</p>
-                        <a class="echo-older-posts" href="{{url}}">Leer más &rarr;</a>
-                    </div>
-                </div>
-            </section>
-        </article>
-
-        {{/foreach}}
-
-        {{!! Pagination links }}
-        {{pagination}}
-    </div>
+    {{> posts}}

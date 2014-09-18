@@ -45,3 +45,14 @@ p a {
     color: #669900;
   }
 }
+
+.author-header {
+    font-size: 0.8em;
+
+    section{
+      &.author{
+        border-top: none;
+        margin-top: 0;
+      }
+    }
+}

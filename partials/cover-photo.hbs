@@ -1,7 +1,13 @@
 {{! This is the blog cover photo. }}
 
-<div class="echo-cover-photo" style="background-image: url({{@blog.cover}});">
+<div class="echo-cover-photo" style="background-image: url({{#if author.cover}}{{author.cover}}{{else}}{{@blog.cover}}{{/if}});">
 	<div class="vertical">
-    	<h2>Sin permisos de escritura</h2>
+    	<h2>
+    		{{#if author}}
+				Artículos de {{author.name}}
+			{{else}}
+				Sin permisos de escritura
+			{{/if}}
+    	</h2>
    	</div>
 </div>
