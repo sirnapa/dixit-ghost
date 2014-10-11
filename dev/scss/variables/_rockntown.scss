@@ -1,7 +1,9 @@
+// Variables para Rockntown
+$blog-color: #DD574C; //rojo rnt
 $primary-color: #30363c; //black
 $secondary-color: #5c6872; //dark grey
 $tertiary-color: #929aa0; //light grey
-$accent-color: #DD574C; //red
+$accent-color: $blog-color;
 $border-color: #d1d6da; //light grey
 
 $body-font: 'Droid Sans', sans-serif; //google font

@@ -1,13 +1,13 @@
-
 // Core variables and mixins
-@import "componentes/variables";
+@import "variables/rockntown";
 @import "componentes/mixins";
 
-// Core CSS
-@import "componentes/screen";
+// Core Echo CSS
+@import "componentes/core";
 
 // Extras
-@import "componentes/imagenes";
+@import "componentes/post";
+@import "componentes/gallery";
 @import "componentes/autor";
 @import "componentes/responsive";
 @import "componentes/search";

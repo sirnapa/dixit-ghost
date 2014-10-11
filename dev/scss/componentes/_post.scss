@@ -1,0 +1,14 @@
+/** Estilo del post **/
+
+.post {
+  img {
+    width: auto;
+    max-width: 100%;
+  }
+  .boton {
+    display: inline-block;
+    padding: 10px 45px;
+    background: $blog-color;
+    color: #FFFFFF;
+  }
+}
