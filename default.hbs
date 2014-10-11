@@ -10,12 +10,8 @@
         <meta name="description" content="{{meta_description}}" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="shortcut icon" href="{{asset "/favicon.ico"}}">
-
         {{! CSS  }}
-        <link href='http://fonts.googleapis.com/css?family=Droid Sans:400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{{asset "css/dixit.css"}}">
-        
+        {{> rockntown/styles}}        
         <!--[if lt IE 9]><script src="{{asset "js/html5shiv.min.js"}}"></script><![endif]-->
 
         {{! Ghost outputs important style and meta data with this tag }}
@@ -39,7 +35,7 @@
             <h2><a href="{{@blog.url}}">{{@blog.title}}</a></h2>
             
             {{! Social Media Icons }}
-            {{> social-media-rockntown}}     
+            {{> rockntown/social-media}}     
         </div>      
     </header>
 
