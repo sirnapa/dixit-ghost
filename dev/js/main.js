@@ -10,11 +10,22 @@ $(document).ready(function(){
         $('.echo-sidebar').toggleClass('echo-sidebar-open');
     });
 
+    $('#search').click(function(e){
+        e.stopPropagation();
+    });
+
 	/* Get contents of .echo-social-media and append to .echo-sidebar */
 	$(".echo-sidebar").append( "<div class='echo-social-media'></div>" );
 	$('.echo-social-media').html($('.echo-social-media').html());
 
     /* Make Videos Responsive */
     $(".post").fitVids();
+
+    /* Centrado de botón */
+    $('.post .boton').parent().css('text-align','center');
+
+    /* Imágenes y Galerías */
+    crearGalerias();
+    centrarImagenes();
 
 });

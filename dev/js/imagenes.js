@@ -1,12 +1,6 @@
 /**
- * Detalles personalizados para Funnix
+ * Imágenes y Galerías
  */
-
-$(document).ready(function(){
-    $('.post .boton').parent().css('text-align','center');
-    crearGalerias();
-    centrarImagenes();
-});
 
 function centrarImagenes(){
     $('.echo-post-content img').each(function(i,imagen){

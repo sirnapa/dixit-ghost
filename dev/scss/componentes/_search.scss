@@ -1,0 +1,29 @@
+/**
+ * Búsquedas con Google
+ */
+.gsc-search-box-tools{
+ 	.gsc-search-box{
+ 		.gsc-input{
+ 			background: none !important;
+ 			font-size: 1em;
+
+ 			.gsc-input-box{
+ 				border-color: #5c6872;
+ 			}
+ 		}
+
+ 		.gsst_a .gscb_a{
+ 			color: #5c6872;
+ 		}
+
+		input.gsc-search-button{
+			&,
+			&:hover, 
+			&:focus{
+				box-sizing: initial;
+				background: #5c6872 !important;
+				border: none !important;
+			}
+		}
+ 	}	
+}

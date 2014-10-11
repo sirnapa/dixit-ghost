@@ -14,10 +14,9 @@
 
         {{! CSS  }}
         <link href='http://fonts.googleapis.com/css?family=Droid Sans:400,700' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{{asset "css/screen.css"}}">
-        <link rel="stylesheet" href="{{asset "css/funnix.css"}}">
+        <link rel="stylesheet" href="{{asset "css/dixit.css"}}">
         
-        <!--[if lt IE 9]><script src="{{asset "js/vendor/html5shiv.min.js"}}"></script><![endif]-->
+        <!--[if lt IE 9]><script src="{{asset "js/html5shiv.min.js"}}"></script><![endif]-->
 
         {{! Ghost outputs important style and meta data with this tag }}
         {{ghost_head}}
@@ -34,15 +33,6 @@
 
     </head>
     <body class="{{body_class}}">
-
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&appId=321203927978124&version=v2.0";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
 
     <header {{#if @blog.cover}}style="margin-bottom: 0px;"{{/if}}>
         <div class="wrapper">
@@ -79,6 +69,7 @@
                     
             </div>
 
+            {{> search}}
             {{> navigation}}
         </div>
 
@@ -96,8 +87,6 @@
 
         {{! Ghost outputs important scripts and data with this tag }}
         {{ghost_foot}}
-        <script src="{{asset "js/vendor/jquery.fitvids.min.js"}}"></script>
-        <script src="{{asset "js/main.js"}}"></script>
-        <script src="{{asset "js/funnix.js"}}"></script>
+        <script src="{{asset "js/dixit.js"}}"></script>
     </body>
 </html>
