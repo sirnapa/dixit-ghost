@@ -1,11 +1,11 @@
 {
-  "name": "echo-funnix",
+  "name": "echo-dixit",
   "version": "0.1.0",
-  "description": "Tema para Funnix.net",
+  "description": "Tema para los blogs de Dixit",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "ssh://git@bitbucket.org/grupodixit/echo-funnix.git"
+    "url": "ssh://git@bitbucket.org/grupodixit/echo-dixit.git"
   },
   "author": "Napa",
   "devDependencies": {
