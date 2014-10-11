@@ -8,7 +8,8 @@ module.exports = function(grunt) {
           style: 'compressed'
         },
         files: {
-          'assets/css/dixit.css': 'dev/scss/dixit.scss'
+          'assets/css/funnix.css': 'dev/scss/funnix.scss',
+          'assets/css/rockntown.css': 'dev/scss/rockntown.scss'
         }
       }
     },
