@@ -1,12 +1,28 @@
-// Core variables and mixins
+/*! Echo - v1.0.1 - 2014-3-1
+* Echo is a responsive and minimalistic theme for ghost.
+* http://www.christopheryee.ca/ghost/echo/
+* by Christopher Yee 
+* customized by Dixit
+*/
+
 @import "componentes/mixins";
-
-// Core Echo CSS
-@import "componentes/core";
-
-// Extras
+@import "componentes/normalize";
+@import "componentes/icon";
+@import "componentes/base";
+@import "componentes/animation";
+@import "componentes/media";
+@import "componentes/heading";
+@import "componentes/form";
+@import "componentes/header";
+@import "componentes/footer";
 @import "componentes/post";
-@import "componentes/gallery";
+@import "componentes/sidebar";
+@import "componentes/navigation";
+@import "componentes/cover";
+@import "componentes/sharing";
+@import "componentes/pagination";
+@import "componentes/blockquote";
 @import "componentes/autor";
-@import "componentes/responsive";
 @import "componentes/search";
+@import "componentes/scroll";
+@import "componentes/responsive";

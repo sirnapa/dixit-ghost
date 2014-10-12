@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+
+.echo-pagination{
+    clear: both;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.echo-older-posts{
+    border: 1px solid $tertiary-color !important;
+}
+
+.echo-older-posts{ 
+    display: inline-block;
+    padding: 10px 45px;
+}
+
+a:link.echo-older-posts, 
+a:visited.echo-older-posts{
+    color: $secondary-color;
+}
+
+a:hover.echo-older-posts{
+    color: $accent-color;
+    border: 1px solid $accent-color !important;
+}

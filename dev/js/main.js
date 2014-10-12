@@ -27,5 +27,6 @@ $(document).ready(function(){
     /* Imágenes y Galerías */
     crearGalerias();
     centrarImagenes();
+    scrollToTop();
 
 });
