@@ -1,13 +1,13 @@
 // Variables para Rockntown
 $blog-color: #21605f; //verde agua oscuro
-$primary-color: darken($blog-color, 4%);
-$secondary-color: darken($blog-color, 8%);
-$tertiary-color: darken($blog-color, 12%);
+$primary-color: darken($blog-color, 2%);
+$secondary-color: darken($blog-color, 4%);
+$tertiary-color: darken($blog-color, 6%);
 $accent-color: $blog-color;
 $border-color: #d1d6da; //light grey
 
 $body-font: sans-serif;
-$body-font-color: #535e67; //dark grey
+$body-font-color: darken($blog-color, 15%); //dark grey
 $body-font-size: 1em;
 $title-font: 'New Rocker', sans-serif; //google font
 
