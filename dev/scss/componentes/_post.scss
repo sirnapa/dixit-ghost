@@ -86,3 +86,15 @@
         border-color: $tertiary-color !important;
     }
 }
+
+.error{
+    p{
+        display: none;
+    }
+
+    &.error-404{
+        p.error-404{
+            display: block;
+        }
+    } 
+}

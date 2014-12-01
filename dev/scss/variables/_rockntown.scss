@@ -1,5 +1,7 @@
+@import "dixit";
+
 // Variables para Rockntown
-$blog-color: #21605f; //verde agua oscuro
+$blog-color: $color-rockntown;
 $primary-color: darken($blog-color, 2%);
 $secondary-color: darken($blog-color, 4%);
 $tertiary-color: darken($blog-color, 6%);

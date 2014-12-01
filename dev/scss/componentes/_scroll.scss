@@ -2,18 +2,22 @@
    Scroll Styles
    ========================================================================== */
 
-.back-to-top {
+a.back-to-top {
 	position: fixed;
 	bottom: 2em;
-	right: 0px;
+	right: -500px;
 	text-decoration: none;
-	color: #000000;
-	background-color: rgba(235, 235, 235, 0.80);
+	color: #FFFFFF;
+	background-color: $primary-color;
 	font-size: 12px;
 	padding: 1em;
-	display: none;
+	border-radius: 10px 0 0 10px;
 
 	&:hover {	
-		background-color: rgba(135, 135, 135, 0.50);
+		background-color: #333;
+	}
+
+	&.visible{
+		right: 0px;
 	}
 }

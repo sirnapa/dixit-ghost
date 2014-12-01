@@ -3,9 +3,9 @@ function scrollToTop() {
 	var duration = 'slow';
 	$(window).scroll(function() {
 		if ($(this).scrollTop() > offset) {
-			$('.back-to-top').slideDown();
+			$('.back-to-top').addClass('visible');
 		} else {
-			$('.back-to-top').slideUp();
+			$('.back-to-top').removeClass('visible');
 		}
 	});
 	
