@@ -62,17 +62,13 @@
            height="191.42857"
            x="357.14285"
            y="578.07648" /></flowRegion><flowPara
-         id="flowPara3056" /></flowRoot>    <text
-       xml:space="preserve"
-       style="font-size:1575.08422851999989689px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f2f2f2;fill-opacity:1;stroke:none;font-family:Sans"
-       x="37.475113"
-       y="988.3537"
-       id="text2987"
-       sodipodi:linespacing="125%"><tspan
-         sodipodi:role="line"
-         id="tspan2989"
-         x="37.475113"
-         y="988.3537"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Johanneke Pro;-inkscape-font-specification:Johanneke Pro;fill:#f2f2f2">b</tspan></text>
+         id="flowPara3056" /></flowRoot>    <g
+       style="font-size:1575.08422852px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#f2f2f2;fill-opacity:1;stroke:none;font-family:Sans"
+       id="text2987">
+      <path
+         d="m 231.28431,92.370727 c 27.17408,8.96e-4 97.67338,35.378733 211.49812,106.133603 l 79.98475,-5.38359 26.14886,0 c 46.14448,8e-4 143.30535,45.88944 291.48287,137.66606 46.1442,50.24743 69.2167,113.82499 69.21757,190.73285 l 0,133.05155 c -8.7e-4,163.046 -83.06187,267.12861 -249.18325,312.24814 L 475.08396,988.3537 c -52.2981,0 -154.84254,-53.06675 -307.63363,-159.20041 -35.37797,-52.81023 -53.06688,-105.87698 -53.06681,-159.20041 l 0,-439.9161 c -7e-5,-76.39485 37.17229,-122.28349 111.5172,-137.666053 l 5.38359,0 m 100.75001,190.732853 -5.38359,456.06687 c 14.35594,127.15536 68.96085,190.73292 163.81492,190.73286 173.29965,-19.48339 259.94971,-38.96683 259.95042,-58.45039 70.75495,-51.27211 106.13279,-127.155 106.13361,-227.6489 l 0,-100.75001 C 856.54886,447.68812 822.96555,382.31604 755.79966,346.93756 l -63.83398,-10.76717 c -143.05015,14.35687 -229.44385,32.04579 -259.18134,53.0668 l -5.38359,-5.38359 0,-116.1317 c -8.71667,-15.38095 -21.27836,-26.14811 -37.68512,-32.30153 -38.45452,8.20431 -57.6816,24.0987 -57.68131,47.68321"
+         style="font-variant:normal;font-stretch:normal;fill:#f2f2f2;font-family:Johanneke Pro;-inkscape-font-specification:Johanneke Pro"
+         id="path2989" />
+    </g>
   </g>
 </svg>
