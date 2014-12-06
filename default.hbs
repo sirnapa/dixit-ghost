@@ -20,56 +20,53 @@
     </head>
     <body class="{{body_class}}">
 
-    <header {{#if @blog.cover}}style="margin-bottom: 0px;"{{/if}}>
-        <div class="wrapper">
-            {{#if @blog.logo}}
-            <a href="{{@blog.url}}">
-                <img class="echo-blog-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
-            </a>
-            {{/if}}
+        <header {{#if @blog.cover}}style="margin-bottom: 0px;"{{/if}}>
+            <div class="wrapper">
+                {{#if @blog.logo}}
+                <a href="{{@blog.url}}">
+                    <img class="dixit-blog-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+                </a>
+                {{/if}}
 
-            {{! Mobile Menu Button }}
-            <i class="icon-menu echo-menu-btn"></i>
-            
-            {{! Blog Title }}
-            <h2><a href="{{@blog.url}}">{{@blog.title}}</a></h2>
-            
-            {{! Social Media Icons }}
-            {{> rockntown/social-media}}     
-        </div>      
-    </header>
+                {{! Mobile Menu Button }}
+                <i class="icon-menu dixit-menu-btn"></i>
+                
+                {{! Blog Title }}
+                <h2><a href="{{@blog.url}}">{{@blog.title}}</a></h2>
+                
+                {{! Social Media Icons }}
+                {{> rockntown/social-media}}     
+            </div>      
+        </header>
 
-    {{#if @blog.cover}}
-        {{> cover-photo}}  
-    {{/if}}
+        {{#if @blog.cover}}
+            {{> cover-photo}}  
+        {{/if}}
 
-    <div class="wrapper">        
-        <div class="echo-sidebar">
+        <div class="wrapper">        
+            <div class="dixit-sidebar">
 
-            <i class="icon-close echo-close-btn"></i>
+                <i class="icon-close dixit-close-btn"></i>
 
-            <div class="echo-blog-info">
-                   
-                <h4>Sobre {{@blog.title}}</h4>
-                <p>{{@blog.description}}</p>
-                    
+                <div class="dixit-blog-info">
+                       
+                    <h4>Sobre {{@blog.title}}</h4>
+                    <p>{{@blog.description}}</p>
+                        
+                </div>
+
+                {{> search}}
+                {{> rockntown/navigation}}
             </div>
 
-            {{> search}}
-            {{> navigation}}
+            <main class="animated fadeIn" role="main">
+                {{{body}}}
+            </main>
         </div>
 
-        <main class="animated fadeIn" role="main">
-            {{{body}}}
-        </main>
-    </div>
+        {{> footer}}
 
-    <footer>
-        <div class="echo-copyright">
-             <section class="copyright">&copy; {{date format="YYYY"}} <a href="{{@blog.url}}/">{{@blog.title}}</a>. Sin permisos de escritura.</section>
-             <section class="poweredby">Un blog de <a href="http://dixit.com.py/">diXit</a> contenidos.</section>
-        </div>
-    </footer>
+        <a href="#" class="back-to-top">Volver arriba</a>
 
         {{! Ghost outputs important scripts and data with this tag }}
         {{ghost_foot}}

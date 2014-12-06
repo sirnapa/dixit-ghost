@@ -8,15 +8,15 @@
         {{! Everything inside the #post tags pulls data from the post }}
         {{#post}}
 
-        <section class="echo-post-content">            
+        <section class="dixit-post-content">            
             {{> post-meta}}
-            <h1 class="echo-post-title">{{{title}}}</h1>
+            <h1 class="dixit-post-title">{{{title}}}</h1>
             <p>{{content}}</p>
         </section>
 
-        <div class="echo-post-footer">
+        <div class="dixit-post-footer">
 
-            <section class="echo-share">
+            <section class="dixit-share">
                 <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
                     onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
                     <i class="icon-facebook"></i>
@@ -35,14 +35,19 @@
                 {{> author}}
             {{/if}}
 
-            <section class="comment">
-                <div class="g-comments" data-href="{{@blog.url}}{{url}}" 
-                    data-first_party_property="BLOGGER" data-width="1000"
-                    data-view_type="FILTERED_POSTMOD">Cargando comentarios ...</div>
-                <script async type="text/javascript" src="//apis.google.com/js/plusone.js?callback=gpcb"></script>
-                <noscript>Por favor activa Javascript para ver los comentarios.</noscript>
-            </section>
-
+            <div id="disqus_thread"></div>
+            <script type="text/javascript">
+                var disqus_shortname = 'rockntown'; // varía de blog en blog
+                var disqus_identifier = '{{post.id}}';
+             
+                /* * * DON'T EDIT BELOW THIS LINE * * */
+                (function() {
+                    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                })();
+            </script>
+            <noscript>Por favor activa Javascript para ver los comentarios.</noscript>
         </div>
 
         {{/post}}

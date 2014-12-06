@@ -1,0 +1,23 @@
+/* ==========================================================================
+   Scroll Styles
+   ========================================================================== */
+
+a.back-to-top {
+	position: fixed;
+	bottom: 2em;
+	right: -500px;
+	text-decoration: none;
+	color: $color-back-to-top;
+	background-color: $primary-color;
+	font-size: 12px;
+	padding: 1em;
+	border-radius: 10px 0 0 10px;
+
+	&:hover {	
+		background-color: $color-fondo-back-to-top-hover;
+	}
+
+	&.visible{
+		right: 0px;
+	}
+}

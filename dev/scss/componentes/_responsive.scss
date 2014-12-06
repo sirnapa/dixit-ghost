@@ -1,8 +1,13 @@
-/**
- * Responsive
- */
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
 
-/* Pantallas grandes */
+@media screen and (max-width: 1480px){
+    .post{
+        padding-left: 50px;
+    }
+}
+
 @media screen and (min-width: 1200px) {
   #post-index {
     .post-flex {
@@ -19,7 +24,113 @@
   }
 }
 
-/* Pantallas pequeñas */
+@media screen and (max-width: 900px){
+
+    .disable-scroll {
+        overflow: hidden;
+        /*position: fixed;*/
+    }
+
+    main{
+        width: 100%;
+        padding: 30px 5% 0 5%;
+        border-right: none;
+    }
+
+    header{
+        padding: 0 5%;
+        margin-bottom: 15px;
+
+        h2{
+            margin: 13px 5px;
+        }
+
+        .dixit-blog-logo{
+            margin: 10px 0;
+        }
+    }
+
+    .dixit-social-media{
+        display: none;
+    }
+
+    .dixit-cover-photo{
+        margin-bottom: 15px;
+    }
+
+    /* Posts */
+
+    .post{
+        padding: 0 0 10px 0;
+    }
+
+    /* Sidebar */
+
+    .dixit-sidebar{
+        position: fixed;
+        @include translate3d($sidebar-width, 0, 0);
+        right: 0;
+        padding: 15px 30px 0 30px;
+        height: 100%;
+        border-left: 1px solid $border-color;
+
+        .dixit-social-media{
+            display: block;
+            float: none;
+            margin: 0 0 25px 0;
+            font-size: 1.1em;
+
+            a:link, a:visited{
+                border: none;
+            }
+        }
+
+        .dixit-blog-info p{
+            margin-bottom: 20px;
+        }
+    }
+
+    .dixit-sidebar-open{
+        @include translate3d(0, 0, 0);
+    }
+
+    /* Navigation */
+
+    .dixit-navigation-menu{
+        margin-bottom: 20px;
+    }
+
+    /* Menu Btn */
+
+    .dixit-menu-btn{
+        display: block;
+        @include transition(color, 0.5s);
+    }
+
+    .dixit-menu-btn:hover{
+        color: $primary-color;
+    }
+
+    /* Menu Movement */
+
+    .dixit-content-open{
+        @include translate3d(-$sidebar-width, 0, 0);
+    }
+
+    /* Menu Transition */
+
+    main, .dixit-cover-photo, header, footer, .dixit-sidebar{
+        -webkit-transition: -webkit-transform .2s cubic-bezier(.16, .68, .43, .99);
+        -moz-transition: -moz-transform .2s cubic-bezier(.16, .68, .43, .99);
+        -o-transition: -o-transform .2s cubic-bezier(.16, .68, .43, .99);
+        transition: transform .2s cubic-bezier(.16, .68, .43, .99);
+        /* improves performance issues on mobile*/
+        -webkit-backface-visibility: hidden;
+        -webkit-perspective: 1000;
+    }
+
+}
+
 @media screen and (max-width: 700px) {
   section.author > div {
     &.image {
@@ -33,6 +144,39 @@
       text-align: center;
     }
   }
+}
+
+@media screen and (max-width: 500px){
+
+    main{
+        padding-top: 10px;
+
+        h1{
+            font-size: 2.0em;
+        }
+
+        h2{
+            font-size: 1.4em;
+        }
+    }
+
+    .dixit-cover-photo{
+        height: 125px;
+
+        h2{
+            font-size: 1.1em;
+        }
+    }
+    
+    .back-to-top{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .dixit-close-btn{
+        display: block;
+    }
 }
 
 /* Google+ Comments */

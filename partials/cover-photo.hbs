@@ -1,12 +1,12 @@
 {{! This is the blog cover photo. }}
 
-<div class="echo-cover-photo" style="background-image: url({{#if author.cover}}{{author.cover}}{{else}}{{@blog.cover}}{{/if}});">
+<div class="dixit-cover-photo" style="background-image: url({{#if author.cover}}{{author.cover}}{{else}}{{@blog.cover}}{{/if}});">
 	<div class="vertical">
     	<h2>
     		{{#if author}}
 				Artículos de {{author.name}}
 			{{else}}
-				Desde la ciudad del rock
+				{{@blog.description}}
 			{{/if}}
     	</h2>
    	</div>

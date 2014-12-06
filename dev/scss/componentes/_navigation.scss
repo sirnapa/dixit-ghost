@@ -1,0 +1,44 @@
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.dixit-navigation-menu{
+    margin-bottom: 30px;
+
+    li{
+        text-align: left;
+        padding: 4px 0;
+    }
+
+    a:link, 
+    a:visited{
+        color: $secondary-color;
+    }
+
+    a:hover{
+        color: $accent-color;
+    }
+
+}
+
+/* Menu button */
+
+.dixit-menu-btn{
+    display: none;
+    float: right;
+    font-size: 2.2em;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Close button (for mobile) */
+
+.dixit-close-btn{
+    display: none;
+    position: absolute;
+    top:10px;
+    right: 10px;
+    z-index: 100;
+    font-size: 1.8em;
+    color: $primary-color;
+}
