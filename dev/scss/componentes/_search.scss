@@ -8,12 +8,12 @@
  			font-size: 1em;
 
  			.gsc-input-box{
- 				border-color: #5c6872;
+ 				border-color: $secondary-color;
  			}
  		}
 
  		.gsst_a .gscb_a{
- 			color: #5c6872;
+ 			color: $secondary-color;
  		}
 
 		input.gsc-search-button{
@@ -21,7 +21,7 @@
 			&:hover, 
 			&:focus{
 				box-sizing: initial;
-				background: #5c6872 !important;
+				background: $secondary-color !important;
 				border: none !important;
 			}
 		}

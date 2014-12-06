@@ -2,14 +2,14 @@
    Sidebar
    ========================================================================== */
 
-.echo-sidebar{
+.dixit-sidebar{
     float: right;
     width: $sidebar-width;
     padding: 0 40px;
     font-size: 0.9em;
     overflow-y: auto;
 
-    .echo-social-media{
+    .dixit-social-media{
         display: none;
     }
 
@@ -31,7 +31,7 @@
 
 }
 
-.echo-blog-info{
+.dixit-blog-info{
     position: relative;
 
     p{

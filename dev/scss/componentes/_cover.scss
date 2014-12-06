@@ -2,7 +2,7 @@
    Cover Photo
    ========================================================================== */
 
-.echo-cover-photo{
+.dixit-cover-photo{
     display: table;
     position: relative;
     float: left;
@@ -29,7 +29,7 @@
     /* Cover Photo Text */
     h2{
         position: relative;
-        color: #FFF;
+        color: $color-cover-text;
         text-shadow: 0 1px 1px rgba(0,0,0,0.5);
         z-index: 100;
     }

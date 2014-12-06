@@ -14,9 +14,10 @@ header{
         margin: 25px 5px;
         color: $primary-color;
         text-transform: uppercase;
+        font-family: $header-font;
     }
 
-    .echo-blog-logo{
+    .dixit-blog-logo{
         float: left;
         width: 45px;
         height: 45px;
@@ -32,7 +33,7 @@ header{
     }
 }
 
-.echo-social-media{
+.dixit-social-media{
     float: right;
     margin: 25px 0;
 

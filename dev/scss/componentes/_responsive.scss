@@ -45,16 +45,16 @@
             margin: 13px 5px;
         }
 
-        .echo-blog-logo{
+        .dixit-blog-logo{
             margin: 10px 0;
         }
     }
 
-    .echo-social-media{
+    .dixit-social-media{
         display: none;
     }
 
-    .echo-cover-photo{
+    .dixit-cover-photo{
         margin-bottom: 15px;
     }
 
@@ -66,7 +66,7 @@
 
     /* Sidebar */
 
-    .echo-sidebar{
+    .dixit-sidebar{
         position: fixed;
         @include translate3d($sidebar-width, 0, 0);
         right: 0;
@@ -74,7 +74,7 @@
         height: 100%;
         border-left: 1px solid $border-color;
 
-        .echo-social-media{
+        .dixit-social-media{
             display: block;
             float: none;
             margin: 0 0 25px 0;
@@ -85,41 +85,41 @@
             }
         }
 
-        .echo-blog-info p{
+        .dixit-blog-info p{
             margin-bottom: 20px;
         }
     }
 
-    .echo-sidebar-open{
+    .dixit-sidebar-open{
         @include translate3d(0, 0, 0);
     }
 
     /* Navigation */
 
-    .echo-navigation-menu{
+    .dixit-navigation-menu{
         margin-bottom: 20px;
     }
 
     /* Menu Btn */
 
-    .echo-menu-btn{
+    .dixit-menu-btn{
         display: block;
         @include transition(color, 0.5s);
     }
 
-    .echo-menu-btn:hover{
+    .dixit-menu-btn:hover{
         color: $primary-color;
     }
 
     /* Menu Movement */
 
-    .echo-content-open{
+    .dixit-content-open{
         @include translate3d(-$sidebar-width, 0, 0);
     }
 
     /* Menu Transition */
 
-    main, .echo-cover-photo, header, footer, .echo-sidebar{
+    main, .dixit-cover-photo, header, footer, .dixit-sidebar{
         -webkit-transition: -webkit-transform .2s cubic-bezier(.16, .68, .43, .99);
         -moz-transition: -moz-transform .2s cubic-bezier(.16, .68, .43, .99);
         -o-transition: -o-transform .2s cubic-bezier(.16, .68, .43, .99);
@@ -160,7 +160,7 @@
         }
     }
 
-    .echo-cover-photo{
+    .dixit-cover-photo{
         height: 125px;
 
         h2{
@@ -174,7 +174,7 @@
 }
 
 @media screen and (max-width: 320px){
-    .echo-close-btn{
+    .dixit-close-btn{
         display: block;
     }
 }

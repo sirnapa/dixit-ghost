@@ -1,22 +1,22 @@
 /**
- * Main JS file for Echo behaviours
+ * Main JS file for Dixit behaviours
  */
 
 $(document).ready(function(){
     
 	/* Off Canvas Navigation */
-    $('.echo-menu-btn, .echo-sidebar').click(function() {
-        $('main, .echo-cover-photo, header, footer').toggleClass('echo-content-open disable-scroll');
-        $('.echo-sidebar').toggleClass('echo-sidebar-open');
+    $('.dixit-menu-btn, .dixit-sidebar').click(function() {
+        $('main, .dixit-cover-photo, header, footer').toggleClass('dixit-content-open disable-scroll');
+        $('.dixit-sidebar').toggleClass('dixit-sidebar-open');
     });
 
     $('#search').click(function(e){
         e.stopPropagation();
     });
 
-	/* Get contents of .echo-social-media and append to .echo-sidebar */
-	$(".echo-sidebar").append( "<div class='echo-social-media'></div>" );
-	$('.echo-social-media').html($('.echo-social-media').html());
+	/* Get contents of .dixit-social-media and append to .dixit-sidebar */
+	$(".dixit-sidebar").append( "<div class='dixit-social-media'></div>" );
+	$('.dixit-social-media').html($('.dixit-social-media').html());
 
     /* Make Videos Responsive */
     $(".post").fitVids();

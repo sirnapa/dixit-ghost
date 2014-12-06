@@ -56,13 +56,13 @@ a:hover{
 
 ::-moz-selection{
     background: $accent-color;
-    color: #FFF;
+    color: $color-seleccion;
     text-shadow: none;
 }
 
 ::selection{
     background: $accent-color;
-    color: #FFF;
+    color: $color-seleccion;
     text-shadow: none;
 }
 

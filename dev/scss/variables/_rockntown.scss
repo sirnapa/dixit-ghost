@@ -1,19 +1,13 @@
 @import "dixit";
 
 // Variables para Rockntown
-$blog-color: $color-rockntown;
-$primary-color: darken($blog-color, 2%);
-$secondary-color: darken($blog-color, 4%);
-$tertiary-color: darken($blog-color, 6%);
-$accent-color: $blog-color;
-$border-color: #d1d6da; //light grey
+$blog-color: 		$color-rockntown;
+$primary-color: 	$blog-color;
+$secondary-color: 	#2C3F6B;
+$tertiary-color: 	#465882;
+$accent-color: 		$blog-color;
 
-$body-font: sans-serif;
-$body-font-color: darken($blog-color, 15%); //dark grey
-$body-font-size: 1em;
-$title-font: 'New Rocker', sans-serif; //google font
-
-$sidebar-width: 320px; //sidebar width
-
-$cover-photo-height: 250px;
-$cover-photo-overlay: 0.4; //40%
+$body-font: 		'Droid Sans', sans-serif;
+$body-font-color: 	darken($blog-color, 15%); 		//dark grey
+$header-font: 		'New Rocker', cursive;			//google font
+$title-font: 		'Bree Serif', serif;			//google font

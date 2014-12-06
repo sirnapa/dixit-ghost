@@ -24,12 +24,12 @@
             <div class="wrapper">
                 {{#if @blog.logo}}
                 <a href="{{@blog.url}}">
-                    <img class="echo-blog-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
+                    <img class="dixit-blog-logo" src="{{@blog.logo}}" alt="{{@blog.title}}" />
                 </a>
                 {{/if}}
 
                 {{! Mobile Menu Button }}
-                <i class="icon-menu echo-menu-btn"></i>
+                <i class="icon-menu dixit-menu-btn"></i>
                 
                 {{! Blog Title }}
                 <h2><a href="{{@blog.url}}">{{@blog.title}}</a></h2>
@@ -44,11 +44,11 @@
         {{/if}}
 
         <div class="wrapper">        
-            <div class="echo-sidebar">
+            <div class="dixit-sidebar">
 
-                <i class="icon-close echo-close-btn"></i>
+                <i class="icon-close dixit-close-btn"></i>
 
-                <div class="echo-blog-info">
+                <div class="dixit-blog-info">
                        
                     <h4>Sobre {{@blog.title}}</h4>
                     <p>{{@blog.description}}</p>
@@ -56,7 +56,7 @@
                 </div>
 
                 {{> search}}
-                {{> navigation}}
+                {{> rockntown/navigation}}
             </div>
 
             <main class="animated fadeIn" role="main">

@@ -13,7 +13,7 @@ footer{
 
     a:link, 
     a:visited{
-        color: #454545;
+        color: $primary-color;
     }
 
     a:hover{
@@ -51,12 +51,12 @@ footer{
             }
 
             &:hover{
-                background-color: #444444;
+                background-color: $color-fondo-blog-visitado;
             }
         }
     }
 
-    .echo-copyright{
+    .dixit-copyright{
         padding: 20px 4%;
     }
 }

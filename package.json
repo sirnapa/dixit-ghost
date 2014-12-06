@@ -1,7 +1,7 @@
 {
-  "name": "echo-dixit",
-  "version": "0.1.0",
-  "description": "Tema para los blogs de Dixit",
+  "name": "dixit",
+  "version": "1.0.0",
+  "description": "Tema para los blogs de Dixit, basado en Echo",
   "main": "index.js",
   "repository": {
     "type": "git",

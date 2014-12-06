@@ -2,28 +2,28 @@
    Pagination
    ========================================================================== */
 
-.echo-pagination{
+.dixit-pagination{
     clear: both;
     position: relative;
     margin: 0 auto;
     text-align: center;
 }
 
-.echo-older-posts{
+.dixit-older-posts{
     border: 1px solid $tertiary-color !important;
 }
 
-.echo-older-posts{ 
+.dixit-older-posts{ 
     display: inline-block;
     padding: 10px 45px;
 }
 
-a:link.echo-older-posts, 
-a:visited.echo-older-posts{
+a:link.dixit-older-posts, 
+a:visited.dixit-older-posts{
     color: $secondary-color;
 }
 
-a:hover.echo-older-posts{
+a:hover.dixit-older-posts{
     color: $accent-color;
     border: 1px solid $accent-color !important;
 }

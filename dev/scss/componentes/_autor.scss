@@ -6,7 +6,7 @@ section {
   &.author {
     display: inline-block;
     width: 100%;
-    border-top: 1px solid #D1D6DA;
+    border-top: 1px solid $border-color;
     margin: 40px 0 0;
     padding: 20px 5px 10px;
     > div {
@@ -20,7 +20,7 @@ section {
       &.about {
         display: table;
         small {
-          color: #929AA0;
+          color: $tertiary-color;
           text-transform: none;
         }
         > {
