@@ -127,6 +127,15 @@
       text-align: center;
     }
   }
+
+  footer{
+    .blogs{
+        .blog{
+            background-size: calc(15%) auto;
+            height: 100px;
+        }
+    }  
+  }
 }
 
 @media screen and (max-width: 500px){
