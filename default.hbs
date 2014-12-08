@@ -11,13 +11,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         {{! CSS  }}
-        {{> rockntown/styles}}        
+        {{> funnix/styles}}        
         <!--[if lt IE 9]><script src="{{asset "js/html5shiv.min.js"}}"></script><![endif]-->
 
         {{! Ghost outputs important style and meta data with this tag }}
         {{ghost_head}}
 
-        {{> rockntown/analytics}}
+        {{> funnix/analytics}}
     </head>
     <body class="{{body_class}}">
 
@@ -36,7 +36,7 @@
                 <h2><a href="{{@blog.url}}">{{@blog.title}}</a></h2>
                 
                 {{! Social Media Icons }}
-                {{> rockntown/social-media}}     
+                {{> funnix/social-media}}     
             </div>      
         </header>
 
@@ -57,7 +57,7 @@
                 </div>
 
                 {{> search}}
-                {{> rockntown/navigation}}
+                {{> funnix/navigation}}
             </div>
 
             <main class="animated fadeIn" role="main">
