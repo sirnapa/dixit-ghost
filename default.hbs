@@ -11,18 +11,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         {{! CSS  }}
-        {{> funnix/styles}}        
+        {{> rockntown/styles}}        
         <!--[if lt IE 9]><script src="{{asset "js/html5shiv.min.js"}}"></script><![endif]-->
 
         {{! Ghost outputs important style and meta data with this tag }}
         {{ghost_head}}
 
-<<<<<<< HEAD
-        {{> funnix/analytics}}        
-
-=======
         {{> rockntown/analytics}}
->>>>>>> develop
     </head>
     <body class="{{body_class}}">
 
@@ -34,18 +29,6 @@
                 </a>
                 {{/if}}
 
-<<<<<<< HEAD
-            {{! Mobile Menu Button }}
-            <i class="icon-menu echo-menu-btn"></i>
-            
-            {{! Blog Title }}
-            <h2><a href="{{@blog.url}}">{{@blog.title}}</a></h2>
-            
-            {{! Social Media Icons }}
-            {{> funnix/social-media}}     
-        </div>      
-    </header>
-=======
                 {{! Mobile Menu Button }}
                 <i class="icon-menu dixit-menu-btn"></i>
                 
@@ -56,7 +39,6 @@
                 {{> rockntown/social-media}}     
             </div>      
         </header>
->>>>>>> develop
 
         {{#if @blog.cover}}
             {{> cover-photo}}  
