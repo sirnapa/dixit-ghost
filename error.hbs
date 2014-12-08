@@ -1,0 +1,9 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+    <div class="error error-{{code}}">
+        <h1>Error {{code}}</h1>
+        <p class="error-{{code}}">No se encuentra la página solicitada.<p>
+    </div>

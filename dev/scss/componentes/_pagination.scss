@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Pagination
+   ========================================================================== */
+
+.dixit-pagination{
+    clear: both;
+    position: relative;
+    padding-top: 40px;
+    text-align: center;
+}
+
+.dixit-older-posts{
+    border: 1px solid $tertiary-color !important;
+}
+
+.dixit-older-posts{ 
+    display: inline-block;
+    padding: 10px 45px;
+}
+
+a:link.dixit-older-posts, 
+a:visited.dixit-older-posts{
+    color: $secondary-color;
+}
+
+a:hover.dixit-older-posts{
+    color: $accent-color;
+    border: 1px solid $accent-color !important;
+}

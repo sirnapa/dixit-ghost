@@ -3,7 +3,7 @@
  */
 
 function centrarImagenes(){
-    $('.echo-post-content img').each(function(i,imagen){
+    $('.dixit-post-content img').each(function(i,imagen){
         if(!$(imagen).parent().hasClass('galeria-wrap')){
             var contenedor = $('<p>').css('text-align','center');
             $(imagen).after(contenedor);
@@ -15,7 +15,7 @@ function centrarImagenes(){
 function crearGalerias(){
     $('body').data('galerias',0);
 
-    $('.echo-post-content img').each(function(i,img){
+    $('.dixit-post-content img').each(function(i,img){
         var galeriaId = $('body').data('galerias');
         if(!$(img).hasClass('galeria_'+galeriaId)){
             $('body').data('galerias',++galeriaId);

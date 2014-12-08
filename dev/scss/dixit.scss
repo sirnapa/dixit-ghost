@@ -1,13 +1,32 @@
+<<<<<<< HEAD
 // Core variables and mixins
 @import "variables/funnix";
+=======
+/*! 
+* Dixit de Nelson Páez
+* Basado en Echo [http://www.christopheryee.ca/ghost/dixit/] de Christopher Yee 
+*
+*/
+>>>>>>> develop
 @import "componentes/mixins";
-
-// Core Echo CSS
-@import "componentes/core";
-
-// Extras
+@import "componentes/normalize";
+@import "componentes/icon";
+@import "componentes/base";
+@import "componentes/animation";
+@import "componentes/media";
+@import "componentes/heading";
+@import "componentes/form";
+@import "componentes/header";
+@import "componentes/footer";
 @import "componentes/post";
-@import "componentes/gallery";
+@import "componentes/sidebar";
+@import "componentes/navigation";
+@import "componentes/cover";
+@import "componentes/sharing";
+@import "componentes/pagination";
+@import "componentes/blockquote";
 @import "componentes/autor";
-@import "componentes/responsive";
 @import "componentes/search";
+@import "componentes/scroll";
+@import "componentes/responsive";
+@import "componentes/grid";

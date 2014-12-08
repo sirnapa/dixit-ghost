@@ -1,0 +1,42 @@
+/* ==========================================================================
+   Sidebar
+   ========================================================================== */
+
+.dixit-sidebar{
+    float: right;
+    width: $sidebar-width;
+    padding: 0 40px;
+    font-size: 0.9em;
+    overflow-y: auto;
+
+    .dixit-social-media{
+        display: none;
+    }
+
+    ul{
+        list-style-type: none;
+        padding-left: 0px;
+        margin-top: 0px;
+    }
+
+    p{
+        color: $tertiary-color;   
+    }
+
+    h4{
+        text-transform: uppercase;
+        margin: 10px 0;
+        color: $secondary-color;
+    }
+
+}
+
+.dixit-blog-info{
+    position: relative;
+
+    p{
+        font-size: 0.9em;
+        line-height: 18px;
+        margin-bottom: 30px;
+    }
+}

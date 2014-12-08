@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Bebas neue';
+    src: url('../fonts/bebas/BebasNeue-webfont.eot');
+    src: url('../fonts/bebas/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bebas/BebasNeue-webfont.woff') format('woff'),
+         url('../fonts/bebas/BebasNeue-webfont.ttf') format('truetype'),
+         url('../fonts/bebas/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: "dixit";
+  src:url("../fonts/dixit/dixit.eot");
+  src:url("../fonts/dixit/dixit.eot?#iefix") format("embedded-opentype"),
+      url("../fonts/dixit/dixit.woff") format("woff"),
+      url("../fonts/dixit/dixit.ttf") format("truetype"),
+      url("../fonts/dixit/dixit.svg#dixit") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+.logo-dixit{
+  margin: 0 -2px 0 10px;
+  font-size: 1.15em;
+  text-decoration: none;
+
+  &:link,&:visited{
+    border-bottom: none;
+  }
+
+  i{
+      margin-left: -9px;
+
+      &.icon-dixit-t{
+        margin-left: -10px;
+      }
+  }
+}
+
+[data-icon]:before {
+  font-family: "dixit" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "dixit" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-dixit:before {
+  content: "a";
+}
+.icon-dixit-d:before {
+  content: "b";
+}
+.icon-dixit-i:before {
+  content: "c";
+}
+.icon-dixit-t:before {
+  content: "d";
+}
+.icon-dixit-x:before {
+  content: "e";
+}
+.icon-mail:before {
+  content: "f";
+}
+.icon-facebook:before {
+  content: "g";
+}
+.icon-twitter:before {
+  content: "h";
+}
+.icon-menu:before {
+  content: "j";
+}
+.icon-nota:before {
+  content: "k";
+}
+.icon-web:before {
+  content: "l";
+}
+.icon-rss:before {
+  content: "m";
+}
+.icon-google-plus:before {
+  content: "n";
+}
