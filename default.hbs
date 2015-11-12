@@ -11,17 +11,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         {{! CSS  }}
-        {{> rockntown/styles}}        
+        {{> rockntown/styles}}
         <!--[if lt IE 9]><script src="{{asset "js/html5shiv.min.js"}}"></script><![endif]-->
 
         {{! Ghost outputs important style and meta data with this tag }}
         {{ghost_head}}
-
-        {{> rockntown/analytics}}
-
-        <script type="text/javascript">
-            var disqus_shortname = 'rockntown'; // varía de blog a blog
-        </script>
     </head>
     <body class="{{body_class}}">
 
@@ -35,29 +29,29 @@
 
                 {{! Mobile Menu Button }}
                 <i class="icon-menu dixit-menu-btn"></i>
-                
+
                 {{! Blog Title }}
                 <h2><a href="{{@blog.url}}">{{@blog.title}}</a></h2>
-                
+
                 {{! Social Media Icons }}
-                {{> rockntown/social-media}}     
-            </div>      
+                {{> rockntown/social-media}}
+            </div>
         </header>
 
         {{#if @blog.cover}}
-            {{> cover-photo}}  
+            {{> cover-photo}}
         {{/if}}
 
-        <div class="wrapper">        
+        <div class="wrapper">
             <div class="dixit-sidebar">
 
                 <i class="icon-close dixit-close-btn"></i>
 
                 <div class="dixit-blog-info">
-                       
+
                     <h4>Sobre {{@blog.title}}</h4>
                     <p>{{@blog.description}}</p>
-                        
+
                 </div>
 
                 {{> search}}
